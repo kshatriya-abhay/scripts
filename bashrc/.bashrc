@@ -4,6 +4,29 @@
 
 [[ $- != *i* ]] && return
 
+echo "Custom commands:"
+echo -e "\033[93mupdt	p2_as_p	p3_as_p	lab_on	lab_off"
+echo ""
+
+lab_on() {
+	ssh -t abhay@172.16.114.44 '. Desktop/restartNetwork.sh'
+}
+lab_off() {
+	ssh -t abhay@172.16.114.44 '. Desktop/stopProxy.sh'
+}
+updt()
+{
+	yaourt -Syy
+	yaourt -Sau
+}
+p2_as_p() {
+	sudo rm /usr/bin/python
+	sudo ln -s /usr/bin/python2 /usr/bin/python
+}
+p3_as_p() { 
+        sudo rm /usr/bin/python
+        sudo ln -s /usr/bin/python3 /usr/bin/python
+}
 colors() {
 	local fgc bgc vals seq0
 
