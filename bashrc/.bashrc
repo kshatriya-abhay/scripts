@@ -5,7 +5,7 @@
 [[ $- != *i* ]] && return
 
 echo "Custom commands:"
-echo -e "\033[93mupdt	p2_as_p	p3_as_p	lab_on	lab_off"
+echo -e "\033[93mupdt	p2_as_p	p3_as_p	lab_on	lab_off	colors	ex"
 echo ""
 
 lab_on() {
