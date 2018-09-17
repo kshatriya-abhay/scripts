@@ -168,3 +168,4 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 export PATH=/home/abhay/Android/repo:$PATH
 export USE_CCACHE=1
 export CCACHE_DIR=~/.ccache
+export LC_ALL=C
