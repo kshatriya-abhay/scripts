@@ -169,3 +169,5 @@ export PATH=/home/abhay/Android/repo:$PATH
 export USE_CCACHE=1
 export CCACHE_DIR=~/.ccache
 export LC_ALL=C
+# Resurrection Remix official flag
+export RR_BUILDTYPE=Official
